@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.shapes.Circle;
 import org.example.shapes.Rectangle;
 import org.example.shapes.Square;
 
@@ -12,5 +13,8 @@ public class Main {
 
         Square sqr1 = new Square(5);
         System.out.println(sqr1);
+
+        Circle cir1 = new Circle(5);
+        System.out.println(cir1);
     }
 }

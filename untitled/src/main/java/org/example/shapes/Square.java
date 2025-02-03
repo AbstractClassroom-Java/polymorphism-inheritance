@@ -1,6 +1,6 @@
 package org.example.shapes;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements IRegularPolygon{
 
     public Square(double sideLength) {
         super(sideLength, sideLength);

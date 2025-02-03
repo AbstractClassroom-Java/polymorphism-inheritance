@@ -1,6 +1,6 @@
 package org.example.shapes;
 
-public class Rectangle {
+public class Rectangle implements IShape{
     protected final double length;
     protected final double width;
 

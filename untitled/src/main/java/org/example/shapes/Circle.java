@@ -1,6 +1,6 @@
 package org.example.shapes;
 
-public class Circle {
+public class Circle implements IShape{
     private final double radius;
 
     public Circle(double radius) {
@@ -21,6 +21,10 @@ public class Circle {
 
     public double getCircumference() {
         return 2 * Math.PI * radius;
+    }
+
+    public double getPerimeter() {
+        return getCircumference();
     }
 
     public String toString() {

@@ -1,6 +1,8 @@
 package org.example.shapes;
 
-public class Rectangle {
+import org.example.shapes.interfaces.Polygon;
+
+public class Rectangle implements Polygon {
     protected final double length;
     protected final double width;
 
@@ -23,6 +25,10 @@ public class Rectangle {
 
     public double getPerimeter() {
         return 2*this.length + 2*this.width;
+    }
+
+    public int getNumberOfSides() {
+        return 4;
     }
 
     public String toString() {

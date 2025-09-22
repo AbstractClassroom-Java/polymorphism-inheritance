@@ -17,6 +17,5 @@ public class Main {
         Circle cir1 = new Circle(5);
         System.out.println(cir1);
 
-        //I am going to add a riddiculous comment here
     }
 }

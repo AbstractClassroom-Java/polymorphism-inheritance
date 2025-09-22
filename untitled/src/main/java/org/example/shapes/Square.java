@@ -10,6 +10,10 @@ public class Square extends Rectangle {
         return length;
     }
 
+    public int getDimension() {
+        return 6;
+    }
+
     public String toString() {
         StringBuilder sb = new StringBuilder("Shape Information & Details");
         sb.append("\n\tShape : Square")

@@ -2,10 +2,19 @@ package org.example.shapes;
 
 import org.example.shapes.interfaces.Polygon;
 
+/**
+ * Rectangle class implementing the Polygon interface.
+ */
 public class Rectangle implements Polygon {
     protected final double length;
     protected final double width;
 
+    /**
+     * Constructor to initialize the length and width of the rectangle.
+     *
+     * @param length Length of the rectangle.
+     * @param width  Width of the rectangle.
+     */
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
@@ -17,6 +26,10 @@ public class Rectangle implements Polygon {
 
     public double getWidth() {
         return this.width;
+    }
+
+    public int getDimension() {
+        return 4;
     }
 
     public double getArea() {

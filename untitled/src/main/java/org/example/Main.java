@@ -3,6 +3,10 @@ package org.example;
 import org.example.shapes.Circle;
 import org.example.shapes.Rectangle;
 import org.example.shapes.Square;
+import org.example.shapes.interfaces.Polygon;
+import org.example.shapes.interfaces.Shape;
+
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -11,10 +15,18 @@ public class Main {
         Rectangle rect1 = new Rectangle(4,3);
         System.out.println(rect1);
 
+
         Square sqr1 = new Square(5);
+
         System.out.println(sqr1);
 
         Circle cir1 = new Circle(5);
         System.out.println(cir1);
+
+        List<Shape> shapes = List.of(rect1, sqr1, cir1);
+        for (Shape shape : shapes) {
+            System.out.println(shape.getArea() + " " + shape.getPerimeter());
+        }
+
     }
 }
